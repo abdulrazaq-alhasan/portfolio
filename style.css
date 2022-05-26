@@ -214,4 +214,8 @@ main {
     padding: 15px 0;
     font-size: 20px;
   }
+
+  .info h2{
+    font-size: 30px;
+  }
 }
