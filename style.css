@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #edf2fc;
+  --secondary-color: #212121;
+}
+
+.dark-theme {
+  --primary-color: #212121;
+  --secondary-color: #edf2fc;
+}
+
+body {
+  height: 100vh;
+  min-width: 840px;
+  display: flex;
+  flex-direction: column;
+  background: var(--primary-color);
+  font-family: sans-serif;
+}
+
+nav {
+  width: 84%;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+#logo {
+  font-size: 40px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #9767cd;
+}
+
+#icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+nav .fa-bars {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+nav ul li a:hover {
+  color: #9767cd;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  margin-left: 8%;
+}
+
+.info h2 {
+  font-size: 70px;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.info h3 {
+  color: var(--secondary-color);
+}
+
+.info h2 span {
+  color: #9767cd;
+}
+
+.info p {
+  color: var(--secondary-color);
+  line-height: 22px;
+}
+
+.info a {
+  background: var(--secondary-color);
+  padding: 7px 18px;
+  text-decoration: none;
+  color: var(--primary-color);
+  margin: 30px 0;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.img-box {
+  position: relative;
+  align-self: stretch;
+  flex: 1;
+}
+
+.img-box img {
+  height: 90%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+
+.img-box:hover .back-img {
+  bottom: 40px;
+}
+.img-box:hover .main-img {
+  left: 54%;
+}
+
+.social-links {
+  margin-left: 8%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.social-links a {
+  font-size: 30px;
+  color: var(--secondary-color);
+  margin-right: 20px;
+}
+
+.social-links a:hover {
+  color: #9767cd;
+}
+
+/* Resposive Design */
+@media (max-width: 1200px) {
+  .info h2 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    text-align: center;
+  }
+  main {
+    flex-direction: column;
+  }
+  .info h2 {
+    font-size: 50px;
+  }
+  .img-box img {
+    display: none;
+  }
+  .social-links {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 80px;
+    position: static;
+  }
+}
+
+@media (max-width: 769px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #logo {
+    font-size: 30px;
+  }
+  nav .fa-bars {
+    display: block;
+  }
+
+  
+  nav ul {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 60px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #9767cd;
+    display: none;
+  }
+  
+  nav ul.active{
+    display: flex;
+  }
+
+  nav ul li {
+    padding: 15px 0;
+    font-size: 20px;
+  }
+}
