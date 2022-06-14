@@ -87,9 +87,6 @@ main {
   align-items: center;
 }
 
-.info {
-  margin-left: 8%;
-}
 
 .info h2 {
   font-size: 55px;
@@ -143,7 +140,6 @@ main {
 }
 
 .social-links {
-  margin-left: 8%;
   height: 80px;
   display: flex;
   align-items: center;
@@ -212,7 +208,7 @@ main {
     position: fixed;
     left: 0;
     top: 70px;
-    background: blueviolet;
+    background: var(--primary-color);
   }
 
   .info h2 {
