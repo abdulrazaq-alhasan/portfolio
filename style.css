@@ -87,6 +87,9 @@ main {
   align-items: center;
 }
 
+.info{
+  margin-left: 8%;
+}
 
 .info h2 {
   font-size: 55px;
@@ -140,6 +143,7 @@ main {
 }
 
 .social-links {
+  margin-left: 8%;
   height: 80px;
   display: flex;
   align-items: center;
@@ -196,7 +200,7 @@ main {
     width: 100%;
   }
 
-  nav ul.show {
+  nav ul.active {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -211,6 +215,11 @@ main {
     background: var(--primary-color);
   }
 
+  .info{
+    margin-left: 0;
+    padding-inline:  10px;
+  }
+
   .info h2 {
     font-size: 24px;
     margin-bottom: 0;
@@ -222,10 +231,18 @@ main {
     line-height: 55px;
   }
 
+  .img-box{
+    margin-right: 0;
+    padding-inline:  10px;
+  }
+
   .social-links {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin-left: 0;
+    padding-inline:  10px;
   }
 
   .social-links a {
