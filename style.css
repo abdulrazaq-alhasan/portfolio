@@ -87,7 +87,7 @@ main {
   align-items: center;
 }
 
-.info{
+.info {
   margin-left: 8%;
 }
 
@@ -215,9 +215,9 @@ main {
     background: var(--primary-color);
   }
 
-  .info{
+  .info {
     margin-left: 0;
-    padding-inline:  10px;
+    padding-inline: 10px;
   }
 
   .info h2 {
@@ -231,9 +231,9 @@ main {
     line-height: 55px;
   }
 
-  .img-box{
+  .img-box {
     margin-right: 0;
-    padding-inline:  10px;
+    padding-inline: 10px;
   }
 
   .social-links {
@@ -242,7 +242,7 @@ main {
     align-items: center;
 
     margin-left: 0;
-    padding-inline:  10px;
+    padding-inline: 10px;
   }
 
   .social-links a {
