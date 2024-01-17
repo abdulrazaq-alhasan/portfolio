@@ -1,83 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="index.html"><img id="logo" src="img/logo.png" alt="logo" /></a>
-        <i id="hamburgar" class="fa-solid fa-bars"></i>
-        <ul>
-          <li><a href="index.html" data-i18n="home">HOME</a></li>
-          <li><a href="/about.html" data-i18n="about">ABOUT</a></li>
-          <li><a href="/hire-me.html" data-i18n="hire">HIRE ME</a></li>
-          <li><a href="/contact.html" data-i18n="contact">CONTACT ME</a></li>
-          <li>
-            <a href="#"> <img src="img/moon.png" id="moon" /></a>
-          </li>
-          <li>
-            <select>
-              <option value="en" selected data-i18n="english">English</option>
-              <option value="sv" data-i18n="swedish">Swedish</option>
-              <option value="ar" data-i18n="arabic">Arabic</option>
-            </select>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="info">
-        <h2 data-i18n="name">I'm <span>Abdulrazaq</span> Alhasan</h2>
-        <h3 data-i18n="job">Front-end Developer</h3>
-        <p data-i18n="details">
-          This is my official portfolio website to showcase my all works related
-          to web <br />
-          development and UI design
-        </p>
-        <a
-          href="https://www.mediafire.com/file/v2k5xcfaxecvndm/CV.docx/file"
-          id="cv-btn"
-          data-i18n="cv"
-          target="_blank"
-        >
-          Download CV
-        </a>
-      </section>
-      <section class="img-box">
-        <img src="img/pattern.png" class="back-img" />
-        <img src="img/abdulrazaq.png" class="main-img" />
-      </section>
-    </main>
-    <footer class="social-links">
-      <a target="_blank" href="https://www.linkedin.com/feed/"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
-      <a
-        target="_blank"
-        href="https://www.facebook.com/profile.php?id=100009178288962"
-        ><i class="fab fa-facebook-square"></i
-      ></a>
-    </footer>
 
-    <script src="script.js"></script>
-    <script src="languages.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html"><img id="logo" src="img/logo.png" alt="logo" /></a>
+      <i id="hamburgar" class="fa-solid fa-bars"></i>
+      <ul>
+        <li><a href="index.html" data-i18n="home">HOME</a></li>
+        <li><a href="/about.html" data-i18n="about">ABOUT</a></li>
+        <li><a href="/hire-me.html" data-i18n="hire">HIRE ME</a></li>
+        <li><a href="/contact.html" data-i18n="contact">CONTACT ME</a></li>
+        <li>
+          <a href="#"> <img src="img/moon.png" id="moon" /></a>
+        </li>
+        <li>
+          <select>
+            <option value="en" selected data-i18n="english">English</option>
+            <option value="sv" data-i18n="swedish">Swedish</option>
+            <option value="ar" data-i18n="arabic">Arabic</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="info">
+      <h2 data-i18n="name">I'm <span>Abdulrazaq</span> Alhasan</h2>
+      <h3 data-i18n="job">Front-end Developer</h3>
+      <p data-i18n="details">
+        This is my official portfolio website to showcase my all works related
+        to web <br />
+        development and UI design
+      </p>
+      <a href="https://www.mediafire.com/file/v2k5xcfaxecvndm/CV.docx/file" id="cv-btn" data-i18n="cv" target="_blank">
+        Download CV
+      </a>
+    </section>
+    <section class="img-box">
+      <img src="img/pattern.png" class="back-img" />
+      <img src="img/abdulrazaq.png" class="main-img" />
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="social-links">
+    <a target="_blank" href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a>
+    <a target="_blank" href="https://www.facebook.com/profile.php?id=100009178288962"><i
+        class="fab fa-facebook-square"></i></a>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="languages.js"></script>
+</body>
+
 </html>
