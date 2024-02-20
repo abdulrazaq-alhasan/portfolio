@@ -28,7 +28,7 @@ moon.addEventListener("click", () => {
 
 cvBtn.addEventListener("click", function () {
   window.location(
-    "https://www.mediafire.com/file/i3a401nrjv9925m/CV_1.docx/file",
+    "https://www.mediafire.com/file/79plbudiw7odp86/Frontend_CV.docx/file",
     "blank"
   );
 });
