@@ -163,6 +163,9 @@ main {
 
 /* Resposive Design */
 @media (max-width: 1200px) {
+  body {
+    text-align: center;
+  }
   .info h2 {
     font-size: 60px;
   }
