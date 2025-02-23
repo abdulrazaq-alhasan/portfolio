@@ -179,6 +179,10 @@ main {
     font-size: 50px;
   }
 
+  .info p {
+    display: none;
+  }
+
   .img-box img {
     position: absolute;
     width: 350px;
@@ -259,6 +263,4 @@ main {
   margin-top: 0;
 }
 
-.info p {
-  line-height: 35px;
-}
+
