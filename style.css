@@ -260,7 +260,5 @@ main {
 }
 
 .info a {
-  margin-top: 0;
+  display: none;
 }
-
-
