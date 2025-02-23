@@ -197,6 +197,10 @@ main {
     height: 80px;
     position: static;
   }
+
+.info a {
+  display: none;
+}
 }
 
 @media screen and (max-width: 767px) {
@@ -259,6 +263,3 @@ main {
   }
 }
 
-.info a {
-  display: none;
-}
