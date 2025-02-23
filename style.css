@@ -178,8 +178,13 @@ main {
   .info h2 {
     font-size: 50px;
   }
+
   .img-box img {
-    display: none;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    z-index: -10;
   }
   .social-links {
     display: flex;
@@ -248,4 +253,12 @@ main {
   .social-links a {
     margin: 8px;
   }
+}
+
+.info a {
+  margin-top: 0;
+}
+
+.info p {
+  line-height: 35px;
 }
