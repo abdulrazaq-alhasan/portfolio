@@ -27,20 +27,6 @@ const translations = {
     arabic: "Arabiska",
     swedish: "Svanska",
   },
-  ar: {
-    home: "الصفحة الرئيسية",
-    about: "من نحن",
-    hire: "وظفني",
-    contact: "تواصل معنا",
-    name: "انا عبد الرزاق الحسن",
-    job: "مطور صفحات انترنت",
-    details:
-      "هذا هو موقعي الرسمي لعرض جميع أعمالي المتعلقة بتطوير الويب وتصميم واجهات المستخدم",
-    cv: "تحميل السيرة الذاتية",
-    english: "الانجليزية",
-    arabic: "العربية",
-    swedish: "السويدية",
-  },
 };
 
 const languageSelector = document.querySelector("select");
@@ -60,13 +46,7 @@ const setLanguage = (language) => {
     const translationKey = element.getAttribute("data-i18n");
     element.textContent = translations[language][translationKey];
   });
-  //   document.dir = language === "ar" ? "rtl" : "ltr";
-  if (language === "ar") {
-    document.dir = "rtl";
-    document.querySelector('.info').style.marginRight = '8%'
-    document.querySelector('.social-links').style.marginRight = '8%'
-  } else {
-    document.dir = "ltr";
-    document.querySelector('.img-box').style.marginRight = '8%'
-  }
+  document.dir = "ltr";
+  document.querySelector('.img-box').style.marginRight = '8%'
+
 };
